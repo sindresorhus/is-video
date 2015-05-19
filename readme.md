@@ -25,7 +25,7 @@ isVideo('src/unicorn.txt');
 
 ## Related
 
-- [video-extensions](https://github.com/arthurvr/video-extensions) - List of video file extensions
+- [video-extensions](https://github.com/sindresorhus/video-extensions) - List of video file extensions
 
 
 ## License

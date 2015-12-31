@@ -1,13 +1,11 @@
-'use strict';
-var test = require('ava');
-var isVideo = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	t.assert(isVideo('unicorn.mp4'));
-	t.assert(isVideo('unicorn.mkv'));
-	t.assert(isVideo('unicorn.MKV'));
-	t.assert(!isVideo('unicorn.jpg'));
-	t.assert(!isVideo('unicorn.txt'));
-	t.assert(!isVideo('unicornzip'));
-	t.end();
+test(t => {
+	t.true(m('unicorn.mp4'));
+	t.true(m('unicorn.mkv'));
+	t.true(m('unicorn.MKV'));
+	t.false(m('unicorn.jpg'));
+	t.false(m('unicorn.txt'));
+	t.false(m('unicornzip'));
 });

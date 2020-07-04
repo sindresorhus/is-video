@@ -1,6 +1,6 @@
 'use strict';
 var path = require('path');
-var videoExtensions = require('video-extensions');
+var videoExtensions = require('video-extensions-list');
 var exts = Object.create(null);
 
 videoExtensions.forEach(function (el) {

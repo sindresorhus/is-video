@@ -35,7 +35,7 @@
     "mkv"
   ],
   "dependencies": {
-    "video-extensions": "^1.0.0"
+    "video-extensions-list": "*"
   },
   "devDependencies": {
     "ava": "*"

@@ -1,43 +1,53 @@
 {
-  "name": "is-video",
-  "version": "1.0.1",
-  "description": "Check if a filepath is a video file",
-  "license": "MIT",
-  "repository": "sindresorhus/is-video",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "ext",
-    "extensions",
-    "extension",
-    "file",
-    "path",
-    "check",
-    "detect",
-    "is",
-    "video",
-    "movie",
-    "mov",
-    "avi",
-    "mp4",
-    "mkv"
-  ],
-  "dependencies": {
-    "video-extensions": "^1.0.0"
-  },
-  "devDependencies": {
-    "ava": "*"
-  }
+	"name": "is-video",
+	"version": "1.0.1",
+	"description": "Check if a filepath is a video file",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sindresorhus/is-video.git"
+	},
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"scripts": {
+		"test": "ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"ext",
+		"extensions",
+		"extension",
+		"file",
+		"path",
+		"check",
+		"detect",
+		"is",
+		"video",
+		"movie",
+		"mov",
+		"avi",
+		"mp4",
+		"mkv"
+	],
+	"dependencies": {
+		"video-extensions": "^1.0.0"
+	},
+	"devDependencies": {
+		"ava": "^[object Promise]",
+		"xo": "^[object Promise]"
+	},
+	"bugs": {
+		"url": "https://github.com/sindresorhus/is-video/issues"
+	},
+	"readme": "ERROR: No README data found!",
+	"homepage": "https://github.com/sindresorhus/is-video#readme",
+	"_id": "is-video@1.0.1"
 }

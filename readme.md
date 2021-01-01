@@ -1,4 +1,4 @@
-# is-video [![Build Status](https://travis-ci.org/sindresorhus/is-video.svg?branch=master)](https://travis-ci.org/sindresorhus/is-video)
+# is-video
 
 > Check if a filepath is a video file
 

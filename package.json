@@ -38,6 +38,6 @@
     "video-extensions": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "*"
+    "ava": "^4.0.0"
   }
 }

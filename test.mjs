@@ -1,7 +1,7 @@
 import test from 'ava';
-import m from './';
+import m from './index.js';
 
-test(t => {
+test('main', t => {
 	t.true(m('unicorn.mp4'));
 	t.true(m('unicorn.mkv'));
 	t.true(m('unicorn.MKV'));

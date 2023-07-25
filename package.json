@@ -4,13 +4,14 @@
   "description": "Check if a filepath is a video file",
   "license": "MIT",
   "repository": "sindresorhus/is-video",
+  "type": "module",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
     "url": "sindresorhus.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=16"
   },
   "scripts": {
     "test": "ava"
@@ -38,6 +39,6 @@
     "video-extensions": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "^4.0.0"
+    "ava": "^5.3.1"
   }
 }

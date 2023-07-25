@@ -1,44 +1,47 @@
 {
-  "name": "is-video",
-  "version": "1.0.1",
-  "description": "Check if a filepath is a video file",
-  "license": "MIT",
-  "repository": "sindresorhus/is-video",
-  "type": "module",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=16"
-  },
-  "scripts": {
-    "test": "ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "ext",
-    "extensions",
-    "extension",
-    "file",
-    "path",
-    "check",
-    "detect",
-    "is",
-    "video",
-    "movie",
-    "mov",
-    "avi",
-    "mp4",
-    "mkv"
-  ],
-  "dependencies": {
-    "video-extensions": "^1.0.0"
-  },
-  "devDependencies": {
-    "ava": "^5.3.1"
-  }
+	"name": "is-video",
+	"version": "1.0.1",
+	"description": "Check if a file path is a video file",
+	"license": "MIT",
+	"repository": "sindresorhus/is-video",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"type": "module",
+	"exports": {
+		"types": "./index.d.ts",
+		"default": "./index.js"
+	},
+	"engines": {
+		"node": ">=16"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"extensions",
+		"extension",
+		"file",
+		"path",
+		"check",
+		"detect",
+		"is",
+		"video",
+		"movie",
+		"mov",
+		"avi",
+		"mp4",
+		"mkv"
+	],
+	"dependencies": {
+		"video-extensions": "^1.2.0"
+	},
+	"devDependencies": {
+		"ava": "^5.3.1"
+	}
 }

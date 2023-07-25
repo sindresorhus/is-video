@@ -1,9 +1,46 @@
 import path from 'node:path';
-import videoExtensions from 'video-extensions' assert { type: "json" };
-const exts = Object.create(null);
+/// import videoExtensions from 'video-extensions' assert {type: 'json'};
 
-videoExtensions.forEach(el => exts[el] = true);
+// TODO: Inlined until we can import JSON.
+const videoExtensions = [
+	'3g2',
+	'3gp',
+	'aaf',
+	'asf',
+	'avchd',
+	'avi',
+	'drc',
+	'flv',
+	'm2v',
+	'm3u8',
+	'm4p',
+	'm4v',
+	'mkv',
+	'mng',
+	'mov',
+	'mp2',
+	'mp4',
+	'mpe',
+	'mpeg',
+	'mpg',
+	'mpv',
+	'mxf',
+	'nsv',
+	'ogg',
+	'ogv',
+	'qt',
+	'rm',
+	'rmvb',
+	'roq',
+	'svi',
+	'vob',
+	'webm',
+	'wmv',
+	'yuv',
+];
 
-const isVideo = filePath => path.extname(filePath).slice(1).toLowerCase() in exts;
+const extensions = new Set(videoExtensions);
 
-export default isVideo;
+export default function isVideo(filePath) {
+	return extensions.has(path.extname(filePath).slice(1).toLowerCase());
+}

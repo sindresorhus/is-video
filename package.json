@@ -1,6 +1,6 @@
 {
 	"name": "is-video",
-	"version": "1.0.1",
+	"version": "2.0.0",
 	"description": "Check if a file path is a video file",
 	"license": "MIT",
 	"repository": "sindresorhus/is-video",

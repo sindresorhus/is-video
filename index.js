@@ -1,12 +1,9 @@
-'use strict';
-var path = require('path');
-var videoExtensions = require('video-extensions');
-var exts = Object.create(null);
+import path from 'node:path';
+import videoExtensions from 'video-extensions' assert { type: "json" };
+const exts = Object.create(null);
 
-videoExtensions.forEach(function (el) {
-	exts[el] = true;
-});
+videoExtensions.forEach(el => exts[el] = true);
 
-module.exports = function (filepath) {
-	return path.extname(filepath).slice(1).toLowerCase() in exts;
-};
+const isVideo = filePath => path.extname(filePath).slice(1).toLowerCase() in exts;
+
+export default isVideo;

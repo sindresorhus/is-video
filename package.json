@@ -4,24 +4,27 @@
 	"description": "Check if a file path is a video file",
 	"license": "MIT",
 	"repository": "sindresorhus/is-video",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"type": "module",
 	"exports": {
 		"types": "./index.d.ts",
 		"default": "./index.js"
 	},
+	"sideEffects": false,
 	"engines": {
-		"node": ">=16"
+		"node": ">=18.20"
 	},
 	"scripts": {
 		"test": "xo && ava"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
 	"keywords": [
 		"extensions",
@@ -39,10 +42,10 @@
 		"mkv"
 	],
 	"dependencies": {
-		"video-extensions": "^1.2.0"
+		"video-extensions": "^2.0.0"
 	},
 	"devDependencies": {
-		"ava": "^5.3.1",
-		"xo": "^0.55.0"
+		"ava": "^6.1.2",
+		"xo": "^0.58.0"
 	}
 }
